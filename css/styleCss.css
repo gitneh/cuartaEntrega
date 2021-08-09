@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: white;
+  font-family: sans-serif; }
+
+.divVacio {
+  background-color: transparent; }
+
+.colorF {
+  color: #c0bcbc; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+fieldset {
+  color: #0f756b;
+  border: solid 1px black; }
+
+table {
+  color: cyan; }
+
+.navColor {
+  background-color: #9ccada; }
+
+.header {
+  background-image: linear-gradient(#1a1ac9, lightblue, white); }
+
+footer {
+  background-image: linear-gradient(#1a1ac9, lightblue, white); }
+
+h1 {
+  color: red;
+  grid-area: linea1;
+  margin-top: 5px; }
+
+h2 {
+  color: darkcyan;
+  font-size: 250%;
+  grid-area: linea2; }
+
+h3 {
+  color: pink;
+  grid-area: linea3; }
+
+header h3 {
+  color: #b96749; }
+
+p {
+  font-style: unset;
+  color: teal;
+  grid-area: linea3; }
+
+.bordesRedondeados {
+  border-radius: 20%; }
+
+li {
+  color: #1498a1;
+  margin: 10px;
+  padding: 10px; }
+
+.italica {
+  font-style: italic; }
+
+.negrita {
+  font-weight: bold; }
+
+.colorSection {
+  background-color: gray; }
+
+.textoRelativo {
+  font-size: 125%; }
+
+.impact {
+  font-family: Impact, sans-serif; }
+
+.verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.centrar {
+  text-align: center; }
+
+.interLineado {
+  line-height: 1.6; }
+
+.olCircle {
+  list-style-type: georgian; }
+
+#h1 {
+  font-size: 50px;
+  font-style: inherit;
+  color: #0f756b;
+  margin-top: 10px;
+  text-align: center; }
+
+#h2 {
+  font-size: 40px;
+  color: lawngreen;
+  font-style: inherit;
+  text-align: center; }
+
+#p {
+  font-size: 30px;
+  color: #039e9e;
+  font-style: inherit;
+  text-align: center; }
+.colorCaption {
+  color: rgb(15, 10, 10);
+}
+
+.margenes {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 5px; }
+
+.padding {
+  padding: 10px 30px 10px 20px; }
+
+.display {
+  display: inline-block;
+  align-items: center; }
+
+.displayInline {
+  display: inline; }
+
+ol li {
+  display: flex;
+  border: solid 1px brown; }
+
+.padreSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch; }
+
+.menuFlex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.menuFlexLi {
+  display: flex;
+  margin-left: 40px;
+  font-size: 20px;
+  align-items: center; }
+
+.h2Footer {
+  font-size: 24px; }
+
+.grillaArea {
+  display: grid;
+  grid-template-areas: "linea1 formulario"
+ "linea2 formulario"
+ "linea3 formulario"; }
+
+form {
+  grid-area: formulario; }
+
+.form__label {
+  color: #077575; }
+
+.divColor {
+  color: black; }
+
+.grad {
+  background-image: linear-gradient(to top, #1a1ac9, lightblue, white); }
+
+.img {
+  border-radius: 20px;
+  transition: all; }
+.divContacto1 {
+  height: 500px;
+  width: 30%;
+  margin-left: 5%;
+  vertical-align: top;
+  float: left;
+}
+.divContacto2{
+  width: 55%;
+  height: 60%;
+  margin-left: 5%;
+  vertical-align: top;
+  float: right;
+}
+#imgC{
+  width: 100%;
+  border-radius: 2%;
+}
+#sectionT{
+  margin: 2% 40%;
+}
+#sectionC{
+  height: 500px;
+}
+#row{
+  font-size: 180%;
+  width: 100%;
+  color: black;
+}
+.transicion2 {
+  transition: all; }
+
+.transicion2__color {
+  background-color: #65ece1;
+  border: solid 1px black;
+  color: rgba(253, 246, 246, 0.897); }
+
+@media (max-widht: 480px) {
+  footer {
+    background-color: #0909d1, #13566d, white; } }
+
+@media (min-widht: 600px) {
+  footer {
+    background-color: #1f1fc9, #328ba8, white; } }
+
+@media (min-widht: 1024px) {
+  footer {
+    background-color: #0909b6, #3b9ebe, white; } }

@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+$margin-top: 5px;
+$margin: 5px;
+$padding: 20px;
+body{
+    background-color:white;
+    font-family: sans-serif;
+}
+.divVacio{
+    background-color:transparent;
+}
+.colorF{
+    color:rgb(192, 188, 188);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+fieldset{
+    color:rgb(15, 117, 107);
+    border: solid 1px black;
+}
+table {
+    color: cyan;
+}
+.navColor {
+    background-color: rgb(156, 202, 218);
+}
+.header{
+    background-image: linear-gradient(rgb(26, 26, 201),lightblue, white);
+}
+footer{
+    background-image: linear-gradient(rgb(26, 26, 201), lightblue, white);
+}
+h1{color: red;
+    grid-area: linea1;
+    margin-top: $margin-top;
+}
+h2 {
+    color: darkcyan;
+    font-size: 250%;
+    grid-area: linea2;
+}
+h3{
+    color: pink;
+    grid-area: linea3;
+}
+header h3{
+    color: rgb(185, 103, 73);
+}
+p{  font-style:unset;
+    color: teal;
+    grid-area: linea3;
+}
+.bordesRedondeados {
+    border-radius: 20%;
+}
+li {
+    color: rgb(20, 152, 161);
+    margin: $margin*2;
+    padding: $padding/2;
+}
+.italica {
+    font-style: italic;
+}
+.negrita {
+    font-weight: bold;
+}
+.colorSection{
+    background-color:gray;
+}
+.textoRelativo{
+    font-size: 125%;
+}
+.impact {
+    font-family: Impact, sans-serif;
+}
+.verdana {
+font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+.centrar {
+    text-align: center;
+}
+.interLineado {
+    line-height: 1.6;
+}
+.olCircle {
+    list-style-type:georgian;
+}
+#h1{
+    font-size: 50px;
+    font-style: inherit;
+    color: rgb(15, 117, 107);
+    margin-top: $margin-top*2;
+    text-align: center;
+}
+#h2{
+    font-size: 40px;
+    color: lawngreen;
+    font-style: inherit;
+    text-align: center;
+}
+#p{
+    font-size: 30px;
+    color: rgb(3, 158, 158);
+    font-style: inherit;
+    text-align: center;
+}
+.margenes {
+    margin-top: $margin-top*2;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.padding {
+    padding: 10px 30px 10px 20px;
+}
+.display {
+    display: inline-block;
+    align-items: center;
+}
+.displayInline {
+    display: inline;
+}
+.padreSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.menuFlex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.menuFlexLi{
+    display: flex;
+    margin-left: 40px;
+    font-size: 20px;
+    align-items: center;
+}
+.h2Footer{
+    font-size: 24px;
+}
+.grillaArea{
+    display: grid;
+    grid-template-areas:
+    "linea1 formulario"
+    "linea2 formulario"
+    "linea3 formulario" ;
+}
+form{
+    grid-area: formulario;
+}
+.form__label{
+    color: rgb(7, 117, 117);
+}
+.divColor{
+    color: black;
+}
+.grad {
+    background-image: linear-gradient(to top, rgb(26, 26, 201), lightblue, white);
+}
+.img{
+    transition: all 5s;
+}
+.img__fluid{
+    height: 200px;
+    width: 125px;
+    border: solid 1px black;
+}
+.transicion2 {
+    transition: all 2s;
+}
+.transicion2__color {
+    background-color: rgb(101, 236, 225);
+    border: solid 1px black;
+    color: rgba(253, 246, 246, 0.897);
+}
+@media (max-widht: 480px){
+    footer {background-color: rgb(9, 9, 209), rgb(19, 86, 109), white;
+    }
+}
+@media (min-widht: 600px){
+    footer {background-color: rgb(31, 31, 201), rgb(50, 139, 168), white;
+    }
+}
+@media (min-widht: 1024px){
+    footer {background-color: rgb(9, 9, 182), rgb(59, 158, 190), white;
+    }
+}

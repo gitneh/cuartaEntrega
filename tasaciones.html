@@ -44,21 +44,25 @@
             <h1 id="h1">¿Querés tasar?</h1><br>
             <h2 id="h2">¡Podemos ayudarte!</h2><br>
             <p id="p"> <u>Completá tus datos aquí:</u> </p><br>
-            <form class="transicion2" action="">
-                    <legend> Información </legend>
-                    <label for="Nombre">Nombre:</label>
-                    <input type="text" name="Nombre"><br>
-                    <label for="Apellido">Apellido:</label>
-                    <input type="text" name="Apellido"><br>
-                    <label for="Mail">Mail:</label>
-                    <input type="email" name="Mail"><br>
-                    <label for="comentarios">Comentarios:</label><br>
-                    <textarea name="comentarios" cols="30" rows="10"></textarea>
-                <p>Acepta términos y condiciones</p>
-                    <input type="checkbox" name="acepta" value="1"><br>
+            <div><form id="divT" action="">
+                    <legend class="negrita h3"> Información </legend>
+                    <label for="Nombre"><u> Nombre: </u></label>
+                    <input class="padright form-control" id="floatingInputGrid" type="text" name="Nombre">
+                    <label for="Apellido"><u> Apellido: </u></label>
+                    <input class="form-control" id="floatingInputGrid" type="text" name="Apellido">
+                    <label for="Mail"><u> Mail:</u></label>
+                    <input class="form-control" id="floatingInputGrid" type="email" name="Mail">
+                    <label for="comentarios"><u> Comentarios:</u></label><br>
+                    <textarea class="form-control" cols="40" rows="2" id="floatingInputGrid" name="comentarios" cols="30" rows="10"></textarea><br>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Acepta términos y condiciones
+                      </label>
+                    </div>
                     <input type="submit" value="Enviar formulario">
                     <input type="reset" value="Limpiar formulario">
-            </form>
+            </form></div>
         </div>
         <footer class="text-center grad">
           <div class="divVacio">

@@ -68,8 +68,10 @@ li {
 .negrita {
   font-weight: bold; }
 
+
 .colorSection {
-  background-color: gray; }
+  margin-left: 5px;
+  color: black; }
 
 .textoRelativo {
   font-size: 125%; }
@@ -108,7 +110,10 @@ li {
   font-style: inherit;
   text-align: center; }
 .colorCaption {
-  color: rgb(15, 10, 10);
+  color: rgb(96, 180, 169);
+}
+.colorN{
+  color: rgb(86, 86, 233);
 }
 
 .margenes {
@@ -159,18 +164,29 @@ ol li {
  "linea2 formulario"
  "linea3 formulario"; }
 
-form {
+div {
   grid-area: formulario; }
 
 .form__label {
   color: #077575; }
+#input{
+  width: 20%;
+  display: inline-block;
+}
 
 .divColor {
   color: black; }
 
 .grad {
   background-image: linear-gradient(to top, #1a1ac9, lightblue, white); }
+.padright{
+  margin-right: 100px;
+}
 
+.tamañoImg{
+  width: 100%;
+  max-height: 460px;
+}
 .img {
   border-radius: 20px;
   transition: all; }
@@ -181,15 +197,20 @@ form {
   vertical-align: top;
   float: left;
 }
+#imgInicio{
+  width: 99%;
+  height: 400px;
+}
 .divContacto2{
-  width: 55%;
-  height: 60%;
-  margin-left: 5%;
+  width: 60%;
+  height: 500px;
+  margin-left: 0%;
   vertical-align: top;
   float: right;
 }
 #imgC{
   width: 100%;
+  height: 100%;
   border-radius: 2%;
 }
 #sectionT{
@@ -202,6 +223,9 @@ form {
   font-size: 180%;
   width: 100%;
   color: black;
+}
+#divT{
+  margin-right: 30%;
 }
 .transicion2 {
   transition: all; }

@@ -40,47 +40,76 @@
             </div>
           </nav>
     </header>
-        <h2 class="centrar"> <u>Tipo de operación</u></h2>
-        <section id="sectionT" class="centrar">
-          <p class="h5">Operación</p>
-            <select name="operación">
-                <option value="Alquiler">Alquiler</option>
-                <option value="Venta">Venta</option>
-                <option value="Temporal">Temporal</option>
-                <option value="Tasaciones">Tasaciones</option>
-            </select>
-                <form action="">
-                    <p class="h5">Ubicación</p>
-                    <input type="text" name="Ubicación" placeholder="Ubicación" >
-                    <p class="h5">Tipo de propiedad</p>
-                    <select name="tipo">
-                    <option value="Casa">Casa</option>
-                    <option value="Departamento">Departamento</option>
-                    <option value="cabaña">Cabaña</option>
-                    <option value="Terreno">Terreno</option>
-                    <option value="Loft">Loft</option>
-                    </select>
-                    <p class="h5">Cantidad de ambientes</p>
-                    <input type="text" name="Mín" placeholder="Min">
-                    <input type="text" name="Máx" placeholder="Máx">
-                    <p class="h5">Cantidad de dormitorios</p>
-                    <input type="text" name="Cantidad de dormitorios" placeholder="Cantidad de dormitorios">
-                    <p class="h5">Precio</p>
-                    <input type="text" name="Precio" placeholder="Seleccione el precio">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                      <label class="form-check-label" for="invalidCheck">
-                        Acepto términos y condiciones
-                      </label>
-                      <div class="invalid-feedback">
-                        Debes estar de acuerdo para continuar
+<section id="sectionC">
+            <div class="divContacto1"><p id="row" class="centrar"><u>Consultanos</u></p>
+              <div class="row g-2">
+                      <div class="col-md">
+                        <div class="form-floating">
+                          <input type="email" class="form-control" id="floatingInputGrid" placeholder="" value="">
+                          <label for="floatingInputGrid">Nombre y Apellido</label>
+                        </div>
                       </div>
-                    </div>
-                  <div class="">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
                   </div>
-                </form>
-        </section>
+                
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Tipo de operación</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>Elige..</option>
+                      <option value="1">Alquiler</option>
+                      <option value="2">Venta</option>
+                      <option value="3">Temporal</option>
+                      <option value="3">Tasaciones</option>
+                    </select>
+                  </div>
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Tipo de propiedad</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>Elige..</option>
+                      <option value="1">Casa</option>
+                      <option value="2">Terreno</option>
+                      <option value="3">Cabaña</option>
+                      <option value="3">Loft</option>
+                      <option value="3">Departamento</option>
+                    </select>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Dormitorios</span>
+                    <input type="text" class="form-control" placeholder="Cantidad de Dormitorios" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+              <div class="row g-2">
+                          <div class="col-md">
+                            <div class="form-floating">
+                              <input type="email" class="form-control" id="floatingInputGrid" placeholder="" value="">
+                              <label for="floatingInputGrid">Teléfono</label>
+                            </div>
+                          </div>
+                      </div>
+              <div class="row g-2">
+                          <div class="col-md">
+                            <div class="form-floating">
+                              <input type="email" class="form-control" id="floatingInputGrid" placeholder="" value="mdo@example.com">
+                              <label for="floatingInputGrid">Email</label>
+                            </div>
+                          </div>
+                      </div>
+              <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                          <label for="floatingTextarea">Comentarios</label>
+                      </div>
+              <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                              Acepto términos y condiciones
+                            </label>
+                            <div class="invalid-feedback">
+                              Debes estar de acuerdo para continuar
+                            </div>
+                          </div>
+                        <div class="">
+                          <button class="btn btn-success" type="submit">Enviar</button>
+                        </div> 
+                      </div>
+    </section>
                 <footer class="text-center grad">
                   <div class="divVacio">
                     <ul class="nav nav-pills">

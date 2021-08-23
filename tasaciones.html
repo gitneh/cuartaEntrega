@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="es">
     <head> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="keywords" content="inmobiliaria, inmobiliaria marina robin, inmobiliaria en cordoba, alquileres en cordoba,
         inmobiliaria marina robin información, inmobiliaria robin nosotros, inmobiliaria robin, tasaciones, servicio de 
         tasaciones, tasaciones en cordoba">
@@ -40,35 +41,77 @@
             </div>
           </nav>
     </header>
-            <div class="grillaArea">
-            <h1 id="h1">¿Querés tasar?</h1><br>
-            <h2 id="h2">¡Podemos ayudarte!</h2><br>
-            <p id="p"> <u>Completá tus datos aquí:</u> </p><br>
-            <div class="colorBack"><form id="divT" action="">
-                    <legend class="negrita h3"> Información </legend>
-                    <label for="Nombre"><u> Nombre: </u></label>
-                    <input class="padright form-control" id="floatingInputGrid" type="text" name="Nombre">
-                    <label for="Apellido"><u> Apellido: </u></label>
-                    <input class="form-control" id="floatingInputGrid" type="text" name="Apellido">
-                    <label for="Mail"><u> Mail:</u></label>
-                    <input class="form-control" id="floatingInputGrid" type="email" name="Mail">
-                    <label for="comentarios"><u> Comentarios:</u></label><br>
-                    <textarea class="form-control" cols="40" rows="2" id="floatingInputGrid" name="comentarios" cols="30" rows="10"></textarea><br>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Acepta términos y condiciones
-                      </label>
+          <main>
+            <section class="grillaTasaciones">
+                <article class="card bg-dark text-white">
+                <img src="images/hands.jpg" class="card-img" alt="trato">
+                <div class="card-img-overlay">
+                  <h1 class="h3 card-title">Tasaciones Inmobiliarias de Propiedades Venta e Inversión </h1>
+                  <p class="card-text">Técnicas y estrategias de valoración de bienes raíces para compra y venta.</p>
+                  <p class="card-text">Evaluación de inversiones inmobiliarias.</p>
+                </div>
+                  </article>
+            <section class="sectionTasa">
+                <div id="divT"><p class="h1 centrar"><u>Consultanos</u></p>
+                  <div class="row g-2">
+                          <div class="col-md">
+                            <div class="form-floating">
+                              <input type="email" class="form-control" id="floatingInputGrid" placeholder="" value="">
+                              <label for="floatingInputGrid">Nombre</label>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="row g-2">
+                        <div class="col-md">
+                          <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInputGrid" placeholder="" value="">
+                            <label for="floatingInputGrid">Apellido</label>
+                          </div>
+                        </div>
                     </div>
-                    <input type="submit" value="Enviar formulario">
-                    <input type="reset" value="Limpiar formulario">
-            </form></div>
-        </div>
+
+                  <div class="row g-2">
+                              <div class="col-md">
+                                <div class="form-floating">
+                                  <input type="email" class="form-control" id="floatingInputGrid" placeholder="" value="">
+                                  <label for="floatingInputGrid">Teléfono</label>
+                                </div>
+                              </div>
+                          </div>
+                  <div class="row g-2">
+                              <div class="col-md">
+                                <div class="form-floating">
+                                  <input type="email" class="form-control" id="floatingInputGrid" placeholder="" value="mdo@example.com">
+                                  <label for="floatingInputGrid">Email</label>
+                                </div>
+                              </div>
+                          </div>
+                  <div class="form-floating">
+                              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                              <label for="floatingTextarea">Comentarios</label>
+                          </div>
+                  <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                  Acepto términos y condiciones
+                                </label>
+                                <div class="invalid-feedback">
+                                  Debes estar de acuerdo para continuar
+                                </div>
+                              </div>
+                            <div class="">
+                              <button class="btn btn-success" type="submit">Enviar</button>
+                            </div> 
+                          </div>
+                        </div>
+            </section>
+        </section>
+      </main>
         <footer class="text-center grad">
           <div class="divVacio">
             <ul class="nav nav-pills">
               <li class="h4">
-                <h2 class="nav-link h4"><stronger><u>Contactanos</u></stronger></h2>
+                <h2><a class="nav-link h4" href="contactanos.html"><stronger><u>Contactanos</u></stronger></a></h2>
               </li>
               <li class="nav-item">
                 <a class="nav-link">General José de Artigas - 52 Oficina 3</a>
@@ -83,7 +126,7 @@
             <div class="divVacio">
               <ul class="nav nav-pills">
                 <li class="h4">
-                  <h2 class="nav-link h4 colorF"><stronger><u>Seguinos</u></stronger></h2>
+                  <h2><a class="nav-link h4 colorF" href="nosotros.html"><stronger><u>Seguinos</u></stronger></a></h2>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link colorF" href="https://www.facebook.com/">Facebook</a>

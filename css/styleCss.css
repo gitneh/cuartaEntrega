@@ -4,7 +4,8 @@
 
 body {
   background-color: white;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  height: 100vh; }
 header {
   background-image: linear-gradient( #2525e9c5, rgba(45, 45, 201, 0.644), lightblue, white); }
 a {
@@ -18,7 +19,7 @@ fieldset {
 table {
   color: cyan; }
 footer {
-    background-image: linear-gradient(#1a1ac9, lightblue, white); }
+    background-image: linear-gradient(#1a1ac9, lightblue, white);}
 h1 {
     grid-area: linea1;
     margin-top: 5px; }
@@ -30,15 +31,28 @@ h3 {
     grid-area: linea3; }
 p {
     font-style: unset;
-    color: teal;
+    color: black;
     grid-area: linea3; }
+main{
+  grid-area: card;
+}
 li {
     color: black;
     font-style: italic;}
 ul li {
         display: flex; }
-div {
-      grid-area: formulario; }
+a {
+      grid-area: formulario;
+}
+div{
+  grid-template-areas: linea1;
+}
+article{
+  grid-template-areas: card;
+}
+section{
+  grid-template-areas: form;
+}
 .divVacio {
     background-color: transparent; }
 .colorF {
@@ -69,9 +83,9 @@ div {
 .olCircle {
   list-style-type: georgian; }
 .colorCaption {
-    color: rgb(96, 180, 169);}
+    color: white;}
 .colorN{
-    color: rgb(86, 86, 233);}
+    color: white;}
 .margenes {
     margin-top: 10px;
     margin-right: 20px;
@@ -104,9 +118,30 @@ div {
   font-size: 24px; }
 .grillaArea {
   display: grid;
-  grid-template-areas: "linea1 formulario"
- "linea2 formulario"
- "linea3 formulario"; }
+  grid-template-areas: "linea1 formulario";}
+.grillaTasaciones{
+  display: grid;
+  grid-template-areas:
+  "card form"}
+.grillaOperacion{
+  display: grid;
+  grid-template-areas: 
+  "carta1 formu"
+  "carta2 formu"
+  "carta3 formu";
+}
+.grillaOperacion .carta1{
+  grid-area: carta1;
+}
+.grillaOperacion .carta1{
+  grid-area: carta2;
+}
+.grillaOperacion .carta1{
+  grid-area: carta3;
+}
+.grillaOperacion .formu{
+  grid-area: formu;
+}
 .form__label {
   color: #077575; }
 .divColor {
@@ -121,13 +156,11 @@ div {
 .img {
   border-radius: 20px;
   transition: all;
-  max-height: 10rem; }
+  max-height: 13rem; }
 .divContacto1 {
-  height: 31.25rem;
-  width: 30%;
+  width: 60%;
   margin-left: 5%;
-  vertical-align: top;
-  float: left;}
+  vertical-align: top;}
 .transicion2 {
   transition: all; }
 .transicion2__color {
@@ -135,22 +168,24 @@ div {
   border: solid 1px black;
   color: rgba(253, 246, 246, 0.897); }
 .divContacto2{
-  width: 60%;
-  height: 31.25rem;
-  margin-left: 0%;
+  width: 80%;
+  margin: 5% auto;
   vertical-align: top;
-  float: right;}
+  }
+.sectionTasa{
+  margin-right: 5%;
+  margin-left: 5%;
+}
 #imgInicio{
-  width: 99%;
-  height: 18rem;}
+  width: 95%;
+  height: 26rem;
+  border-radius: 5%;}
 #imgC{
   width: 100%;
   height: 100%;
   border-radius: 2%;}
 #sectionT{
   margin: 2% 40%;}
-#sectionC{
-  height: 32.5rem;}
 #input{
   width: 20%;
   display: inline-block;}
@@ -165,29 +200,127 @@ div {
   color: lawngreen;
   font-style: inherit;
   text-align: center; }
-#p {
-  font-size: 30px;
-  color: #039e9e;
-  font-style: inherit;
-  text-align: center; }
 
-#row{
-  font-size: 180%;
-  width: 100%;
-  color: black;
-}
-#divT{
-  margin-right: 30%;
-}
 
-@media (max-widht: 480px) {
-  footer {
-    background-color: #0909d1, #13566d, white; } }
 
-@media (min-widht: 600px) {
-  footer {
-    background-color: #1f1fc9, #328ba8, white; } }
+@media screen and (max-width: 764px) and (min-width: 300px) {
+  body {
+    height: 100vh;}
+  .tamañoImg, .carousel-inner{
+    max-height: 9rem;}
+  #imgInicio{
+    height: 17rem;}
+  section div a img{
+    display: none !important;}
+  main section article{
+    display: none !important;
+  }
+  #divT{
+    margin-bottom: 2%;
+  }
+  main{
+    margin: 15% 0%;}
+  .carta1, .carta2, .carta3{
+    display: none !important;
+  }
+  }
+  
+@media screen and (min-width: 765px) and (max-width: 1023px) {
+  .tamañoImg, .carousel-inner{
+    max-height: 23rem;}
+  body{
+    height: 100vh;}
+  .divContacto1{
+    max-height: 416px;}
+  .divContacto2{
+    max-height: 416px;
+  }
+  #sectionC{
+    margin: 7% 0%;
+    height: 32rem;
+  }
+  main section {
+    height: 30rem;
+  }
+  main section article img{
+    height: 100%;
+  }
+  article{
+    width: 95%;
+  }
+  main{
+    height: 30rem;
+    margin: 11% 0%;
+  }
+  .carta1, .carta2, .carta3 {
+    height: 20%;
+    width: 70%;
+    margin-left: 2%;
+  }
+  .formu{
+    width: 90%;
+    height: 90%;
+    margin: 0%;
+  }
+  .imgT{
+    width: 100%;
+    height: 12rem;
+    border-radius: 2%;}}
+@media screen and (min-width: 1023px) and (max-width:1439px) {
+  body {
+    height: 100vh;}
+  .carta1, .carta2, .carta3 {
+    height: 20%;
+    width: 70%;
+    margin-left: 2%;
+  }
+  .formu{
+    width: 90%;
+    height: 90%;
+    margin: 0%;
+  }
+  .imgT{
+    width: 100%;
+    height: 12rem;
+    border-radius: 2%;}
+  .colorCard{
+    background-color: lightgray;
+  }
 
-@media (min-widht: 1024px) {
-  footer {
-    background-color: #0909b6, #3b9ebe, white; } }
+  .divContacto1{
+    height: 80%;
+  }
+  .divContacto2{
+    height: 70%;
+    margin-top: 5%;
+    width: 90%;
+  }
+  article{
+    width: 100%;
+    height: 100%;
+  }
+  #divTasacion{
+    height: 20rem;
+    margin: 5%;
+  }
+  section div div .row{
+    height: 2rem;
+  }
+  #divT{
+    height: 17rem;
+  }
+  main section article img{
+    height: 25rem;
+    }
+  main{
+      height: 25rem;
+      width: 100%;
+      margin: 1% 0%;
+    }
+  main section{
+      height: 25rem;
+    }
+  .sectionTasa{
+    width: 19rem;
+    height: 25rem;}
+  }

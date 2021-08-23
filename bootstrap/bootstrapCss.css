@@ -636,6 +636,7 @@ progress {
   margin-top: calc(var(--bs-gutter-y) * -1);
   margin-right: calc(var(--bs-gutter-x) * -.5);
   margin-left: calc(var(--bs-gutter-x) * -.5);
+  max-height: auto;
 }
 .row > * {
   flex-shrink: 0;
@@ -2424,10 +2425,9 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus {
-  border-color: ;
+  border-color: green;
   outline: 0;
- 
-}
+ }
 .form-check-input:checked {
   background-color: rgba(8, 117, 8, 0.507);
   border-color: green;
@@ -4257,7 +4257,6 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
 .card > hr {

@@ -212,7 +212,8 @@ section{
     height: 17rem;}
   section div a img{
     display: none !important;}
-  main section article{
+
+  .sectionTasa{
     display: none !important;
   }
   #divT{

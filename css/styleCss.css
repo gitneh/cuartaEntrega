@@ -207,7 +207,10 @@ section{
   body {
     height: 100vh;}
   .tamañoImg, .carousel-inner{
-    max-height: 9rem;}
+    max-height: 20rem;}
+  .divContacto2{
+    margin: 2% auto;
+  }
   #imgInicio{
     height: 17rem;}
   section div a img{
@@ -228,13 +231,15 @@ section{
   
 @media screen and (min-width: 765px) and (max-width: 1023px) {
   .tamañoImg, .carousel-inner{
-    max-height: 23rem;}
+    height: 25rem;}
   body{
     height: 100vh;}
   .divContacto1{
     max-height: 416px;}
   .divContacto2{
-    max-height: 416px;
+    max-height: 80% ;}
+  .ga{
+    height: 40rem;
   }
   #sectionC{
     margin: 7% 0%;
